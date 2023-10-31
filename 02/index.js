@@ -15,3 +15,7 @@ console.log(Name);
     let city = "rampur"
     console.log(city);
 }
+
+const arr1 = [1,2,3,4];
+arr1.push(45)
+console.log(arr1);
