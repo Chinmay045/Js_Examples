@@ -11,3 +11,10 @@ console.log(arr.length ,(typeof arr));
 
 let num = Number("3535");
 console.log(num ,(typeof num));
+
+//type coersion
+
+let mystr = Number("698");
+let mynum = 34;
+
+console.log(mystr + mynum);
