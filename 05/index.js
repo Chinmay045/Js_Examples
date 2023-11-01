@@ -15,3 +15,4 @@ console.log(html.toLocaleUpperCase());
 console.log(html);
 
 console.log(html.indexOf('this'));
+console.log(html.endsWith('str2'));
