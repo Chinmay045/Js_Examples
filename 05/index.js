@@ -16,3 +16,6 @@ console.log(html);
 
 console.log(html.indexOf('this'));
 console.log(html.endsWith('str2'));
+
+console.log(html.slice(0,4));
+console.log(html.split('      '));
