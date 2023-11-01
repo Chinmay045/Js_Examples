@@ -18,3 +18,9 @@ let SMarks ={
 }
 
 console.log(SMarks);
+
+function Name(params) {
+    
+}
+
+console.log(typeof Name);
