@@ -22,3 +22,6 @@ console.log(marks);
 
 marks.unshift(2);
 console.log(marks);
+
+marks.splice(2,3);
+console.log(marks);
