@@ -27,3 +27,14 @@ while (j <= 10) {
     console.log(j);
     j += 1;
 } 
+
+
+let obj = {
+    name: "Chinnmay",
+    class: "10",
+    city:"Shivamogga"
+}
+
+for(let key in obj){
+    console.log(obj);
+}
