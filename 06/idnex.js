@@ -14,3 +14,11 @@ console.log(Array.isArray("mixd"));
 let value = marks.indexOf(24);
 console.log(value);
 
+marks.push(33);
+console.log(marks);
+
+marks.shift();
+console.log(marks);
+
+marks.unshift(2);
+console.log(marks);
