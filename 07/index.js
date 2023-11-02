@@ -17,3 +17,7 @@ if(doesdrive &&  age >18){
 else{
     console.log("You cannot drive");
 }
+
+for(let i = 0;i <= 5;i++){
+    console.log(i);
+}
