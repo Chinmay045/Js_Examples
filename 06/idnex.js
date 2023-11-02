@@ -10,3 +10,7 @@ console.log(mixed);
 console.log(fruits);
 console.log(arr.length);
 console.log(Array.isArray("mixd"));
+
+let value = marks.indexOf(24);
+console.log(value);
+
