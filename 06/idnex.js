@@ -1,6 +1,6 @@
 console.log("hello");
 
-const marks = [34, 23, 24, 93, 73, 25];
+let marks = [34, 23, 24, 93, 73, 25];
 const fruits = ['orange', 'Apple', 'PineApple'];
 const mixed = ['str', 89, [3, 5]];
 
@@ -23,5 +23,6 @@ console.log(marks);
 marks.unshift(2);
 console.log(marks);
 
-marks.splice(2,3);
+let marks2 = [2,3,4,5];
+marks = marks.concat(marks2);
 console.log(marks);
