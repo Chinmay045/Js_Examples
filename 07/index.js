@@ -8,3 +8,12 @@ if(age == 19){
 else{
     console.log("It is false");
 }
+
+let doesdrive = true;
+// let age =18
+if(doesdrive &&  age >18){
+    console.log("You can drive");
+}
+else{
+    console.log("You cannot drive");
+}
