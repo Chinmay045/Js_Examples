@@ -20,10 +20,11 @@ console.log(html.endsWith('str2'));
 console.log(html.slice(0,4));
 console.log(html.split('      '));
 
-let fruit = "orange";
+let  fruit = "orange";
 let fruit2 = "Apple";
 let myHtml = `Hello ${name} 
 <h1> This is heading </h1>
 <p> You like ${fruit} and ${fruit2}`;
-console.log(myHtml);
+// console.log(myHtml);
+document.body.innerHTML = myHtml;
 
