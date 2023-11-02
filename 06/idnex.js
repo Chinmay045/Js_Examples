@@ -26,3 +26,13 @@ console.log(marks);
 let marks2 = [2,3,4,5];
 marks = marks.concat(marks2);
 console.log(marks);
+
+
+let myObj = {
+    name : "Chinmay",
+    Channel: "ChinmaySandur",
+    isActive : true,
+    marks : [1,2,3,4]
+}
+
+console.log(myObj);
