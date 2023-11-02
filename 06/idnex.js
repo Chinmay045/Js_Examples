@@ -9,3 +9,4 @@ console.log(arr);
 console.log(mixed);
 console.log(fruits);
 console.log(arr.length);
+console.log(Array.isArray("mixd"));
