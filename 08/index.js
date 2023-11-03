@@ -7,3 +7,11 @@ let val = myGreet("chinmay")
 // greet("Chinmay");
 console.log(val);
 
+const myObj = {
+    name : "Chinmay",
+    game :function (){
+        return "GTA";
+    }
+}
+
+console.log(myObj.game());
