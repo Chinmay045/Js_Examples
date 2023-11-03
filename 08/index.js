@@ -15,3 +15,9 @@ const myObj = {
 }
 
 console.log(myObj.game());
+
+arr = ['fruit', 'vegetable', 'furniture'];
+
+arr.forEach(function(element,  index,array ){
+    console.log(element,array,index);
+})
