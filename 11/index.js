@@ -6,3 +6,5 @@ let b = document.links;
                     console.log(element);
                 }
             })
+
+            
