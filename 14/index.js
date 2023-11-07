@@ -24,3 +24,6 @@ console.log(elem2);
 // console.log(tnode);
 element.replaceWith(elem2);
 
+let myul = document.getElementById('myul');
+myul.replaceChild(element, document.getElementById('fui'));
+console.log(myul);
