@@ -22,3 +22,13 @@ function func1(e) {
     e.preventDefault();
 }
 console.log(btn);
+
+document.querySelector('.no').addEventListener
+('mouseleave', function (){
+    console.log("You exited no");
+})
+
+document.querySelector('.no').addEventListener
+('mouseenter', function(){
+    console.log("You entered no");
+})
