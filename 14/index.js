@@ -29,3 +29,21 @@ myul.replaceChild(element, document.getElementById('fui'));
 console.log(myul);
 
 myul.removeChild(document.getElementById('lui'));
+
+let elemenT = document.createElement('h1');
+elemenT.innerHTML = "Go to code with harry"
+// Create an a element (link)
+let link = document.createElement('a');
+link.href = 'https://www.codewithharry.com'; // Replace 'https://example.com' with the URL you want
+
+// Create an h1 element
+let Element = document.createElement('h3');
+Element.innerHTML = "Go to code with harry";
+
+// Append the h1 element to the a element
+link.appendChild(Element);
+
+// Append the a element to the document's body
+document.body.appendChild(link);
+ 
+console.log(elemenT);
