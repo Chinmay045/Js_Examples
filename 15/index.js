@@ -12,10 +12,13 @@
 //     })
 
 let btn = document.getElementById('btn');
-btn.addEventListener('dblclick', func1);
+// btn.addEventListener('dblclick', func1);
+btn.addEventListener('mouseover', func1)
+// btn.addEventListener('mouseup',func1)
+
 
 function func1(e) {
-    console.log("Thanks",e);
+    console.log("Thanks", e);
     e.preventDefault();
 }
 console.log(btn);
