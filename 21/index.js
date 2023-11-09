@@ -16,4 +16,9 @@ divElem.addEventListener('click', function () {
         divElem.innerHTML = `  <textarea class="form-control" class = "textarea" id="textarea">${html}</textarea>
     `;
     }
+
+    let textarea = document.getElementById('textarea');
+    textarea.addEventListener('blur', function(){
+        elem.innerHTML = textarea.value;
+    });
 })
