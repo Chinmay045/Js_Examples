@@ -1,8 +1,18 @@
 let divElem = document.createElement('div');
-let text = document.createTextNode("This is My element. Click to edit it");
+
+let val = localStorage.getItem('text');
+let text;
+if(val == null){
+    text = document.createTextNode("This is My element. Click to edit it");
+}
+else{
+    text = document.createTextNode(val);
+}
 divElem.setAttribute('id', 'elem');
 divElem.setAttribute('class', 'elem');
 divElem.setAttribute('style', 'border:2px solid black;width:154px;  margin:34px; padding:23px');
+
+
 
 let container = document.querySelector(".container");
 let first = document.getElementById('myFirst');
@@ -20,5 +30,6 @@ divElem.addEventListener('click', function () {
     let textarea = document.getElementById('textarea');
     textarea.addEventListener('blur', function(){
         elem.innerHTML = textarea.value;
+        localStorage.setItem('text',elem.innerHTML)
     });
 })
