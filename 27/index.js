@@ -7,7 +7,7 @@ function buttonClickHandler() {
     console.log("you have clicked the FetchButton");
     const xhr = new XMLHttpRequest();
 
-    xhr.open("GET", "https://jsonplaceholder.typicode.com/todos/1", true);
+    xhr.open("POST", "https://dummy.restapiexample.com/api/v1/create", true);
 
     xhr.onprogress = function () {
         console.log('On progress');
@@ -26,4 +26,6 @@ function buttonClickHandler() {
         console.log("Ready state is ", xhr.readyState);
     }
     xhr.send();
+
+    console.log("We are done");
 }
