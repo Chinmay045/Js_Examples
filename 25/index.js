@@ -79,6 +79,10 @@ function libraryFormSubmit(e) {
         display.show("danger", "Sorry you cannot add book");
     }
 
+    setTimeout(function () {
+        message.innerHTML = "";
+    }, 6000)
+
     e.preventDefault();
 
 }
