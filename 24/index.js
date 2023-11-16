@@ -6,6 +6,9 @@ class Employee {
         this.experience = givenExperience;
         this.division = givenDivision;
     }
+    slogan() {
+        return ` I am ${this.name} and this company is the best!!`
+    }
 }
 
 exam = new Employee("Chinmay", 4, "Division");
