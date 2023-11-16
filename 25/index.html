@@ -32,6 +32,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg bg-dark ">
+
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Harry Library</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -52,7 +53,12 @@
             </div>
         </div>
     </nav>
-
+    <div id="message">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
     <div class="container">
         <form id="libraryForm">
             <div class="row mb-3">

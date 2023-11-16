@@ -19,15 +19,33 @@ Display.prototype.add = function (book) {
     <td>${book.author}</td>
     <td>${book.type}</td> 
 </tr>`
-    tableBody.innerHTML = uiString;
+    tableBody.innerHTML += uiString;
 }
 Display.prototype.clear = function () {
     let libraryForm = document.getElementById('libraryForm')
     libraryForm.reset();
 }
 
-//Add submit event listener to libraryForm
+Display.prototype.validate = function (book) {
+    if (book.name.length < 2 || book.author.length < 2) {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
 
+Display.prototype.show = function (type, Message) {
+    let message = document.getElementById('message');
+    message.innerHTML = `<div id="message">
+    <div class="alert alert-${type} alert-dismissible fade show" role="alert">
+        <strong>Message:</strong>${Message} You should check in on some of those fields below.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+</div>`
+}
+
+//Add submit event listener to libraryForm
 let libraryForm = document.getElementById('libraryForm')
 libraryForm.addEventListener('submit', libraryFormSubmit);
 
@@ -53,8 +71,14 @@ function libraryFormSubmit(e) {
     console.log(book);
 
     let display = new Display();
-    display.add(book);
-    display.clear();
+    if (display.validate(book)) {
+        display.add(book);
+        display.clear();
+        display.show('success', "Your Book has been added successfully");
+    } else {
+        display.show("danger", "Sorry you cannot add book");
+    }
+
     e.preventDefault();
 
 }
