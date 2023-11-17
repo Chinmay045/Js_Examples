@@ -14,3 +14,7 @@ function func1() {
         },2000);
     })
 }
+
+func1.then(function(){
+    console.log("thanks for resolving");
+})
