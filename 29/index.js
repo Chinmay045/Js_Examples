@@ -23,5 +23,5 @@ function getStudents() {
 }
 
 let newStudent = { name: "Sunny", Subject: "Python" }
-enrollStudent(newStudent, getStudents());
+enrollStudent(newStudent, getStudents);
 // getStudents();
