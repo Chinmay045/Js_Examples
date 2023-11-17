@@ -17,4 +17,6 @@ function func1() {
 
 func1.then(function(){
     console.log("thanks for resolving");
+}).catch(function (){
+    console.log("error resolving the promise");
 })
