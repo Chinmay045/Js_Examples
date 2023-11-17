@@ -10,6 +10,7 @@ function func1() {
             }
             else{
                 console.log("Your promise has not been resolved");
+                reject("sorry not fullfilled");
             }
         },2000);
     })
