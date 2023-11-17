@@ -6,7 +6,7 @@ const students = [
 function enrollStudent(student){
     setTimeout(function(){
         students.push(student)
-
+console.log("success");
     },3000)
 }
 
@@ -19,3 +19,7 @@ function getStudents(){
         document.getElementById('students').innerHTML = str;
     },1000);
 }
+
+let newStudent = {name:"Sunny", Subject: "Python"}
+enrollStudent(newStudent);
+getStudents();
