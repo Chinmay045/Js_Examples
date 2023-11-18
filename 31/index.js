@@ -1,7 +1,6 @@
 console.log("Hello");
 
 
-const greet = ()=>{
-    return "Good Morning";
-}
+const greet = () =>  "Good Morning";
+
 console.log(greet());
