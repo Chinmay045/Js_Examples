@@ -4,7 +4,7 @@ function func1() {
     return new Promise(function (resolve, reject) {
         setTimeout(() => {
             const error = true;
-            if (!error) {
+            if (error) {
                 console.log("Your promise has been resolved");
                 resolve();
             }
