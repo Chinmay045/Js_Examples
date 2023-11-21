@@ -20,3 +20,6 @@ console.log(res);
 
 let res1 = s.search(re);
 console.log(res1)
+
+let res2 = s.replace(re, "chinmay")
+console.log(res2)
