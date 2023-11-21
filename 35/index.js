@@ -10,3 +10,12 @@ catch (err) {
 }finally{
 console.log("Finally we will run this");
 }
+
+
+let a = "Harry Bhai";
+a = undefined;
+if(a == undefined){
+    throw new Error("this is not undefined");
+}else{
+    console.log("This is undefined");
+}
