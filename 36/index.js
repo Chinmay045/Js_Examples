@@ -178,4 +178,16 @@ console.log("The results in the objects are :", myObj["results"]);
 let meanings = document.getElementById("meanings")
 meanings.addEventListener("click", () => {
     console.log("SomeOne clicked meanings");
+    populate();
 })
+
+function populate() {
+    let results = myObj["results"];
+    let html = "";
+    results.forEach(element => {
+        html += `<li>One of the definitions of example is ${element.definition} </li>`
+    })
+    let defs = document.getElementById("defs");
+    defs.innerHTML = html;
+
+}
