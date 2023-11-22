@@ -1,4 +1,5 @@
-let regex = /chiny/;
+let regex = /^c/;
+regex = /y$/;
 
 let str = "chinmay is agood boy, chinmay code is chinmay";
 
