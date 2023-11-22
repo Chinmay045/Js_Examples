@@ -9,3 +9,6 @@ cars[0] = "Toyota";
 // You can add an element:
 cars.push("Audi");
 console.log(cars)
+
+const d = new Date();
+console.log(d)
