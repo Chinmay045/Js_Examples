@@ -3,7 +3,8 @@ console.log("Hello")
 let regex = /H[a-z]rry/;
 regex = /H[aty]rry/;
 regex = /Har{2}y/;
-str = "Harry bhai";
+regex = /(Har){2}/;
+str = "HarHarry bhai";
 
 let result = regex.exec(str);
 console.log("The result from exec is ", result);
