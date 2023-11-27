@@ -10,6 +10,8 @@ name.addEventListener("blur", () => {
     console.log(regex, str);
     if (regex.test(str)) {
         console.log("it is matched!!")
+    }else{
+        console.log("no match");
     }
 })
 
