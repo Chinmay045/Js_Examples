@@ -21,7 +21,7 @@ name.addEventListener("blur", () => {
 // console.log(name, email, phone);
 email.addEventListener("blur", () => {
     console.log("email is blurred");
-    let regex = /^[a-zA-z]([0-9a-zA-Z]){1,10}$/;
+    let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
     let str = email.value;
     console.log(regex, str);
     if (regex.test(str)) {
@@ -41,7 +41,7 @@ phone.addEventListener("blur", () => {
     let str = phone.value;
     console.log(regex, str);
     if (regex.test(str)) {
-        console.log("it is matched!!")
+        console.log("your phone is valid")
         phone.classList.remove("is-invalid");
 
     }else{
