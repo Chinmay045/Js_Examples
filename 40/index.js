@@ -1,6 +1,6 @@
 console.log("Hello")
 
-let regex = /^H/;
+let regex = /H[a-z]rry/;
 str = "Harry bhai";
 
 let result = regex.exec(str);
