@@ -4,7 +4,8 @@ regex = /\w+d1r/;
 regex = /\w+ bhai/;
 regex = /\d999/;
 regex = /\D999/;
-str = "Harryd1r bhai  hrr99999"
+regex = /\ska number/
+str = "Harryd1r bhai ka number  hrr99999"
 
 
 let result = regex.exec(str);
