@@ -12,7 +12,7 @@ name.addEventListener("blur", () => {
         console.log("it is matched!!")
         name.classList.remove("is-invalid");
 
-    }else{
+    } else {
         console.log("no match");
         name.classList.add("is-invalid");
     }
@@ -28,7 +28,7 @@ email.addEventListener("blur", () => {
         console.log("it is matched!!")
         email.classList.remove("is-invalid");
 
-    }else{
+    } else {
         console.log("no match");
         email.classList.add("is-invalid");
     }
@@ -44,9 +44,19 @@ phone.addEventListener("blur", () => {
         console.log("your phone is valid")
         phone.classList.remove("is-invalid");
 
-    }else{
+    } else {
         console.log("no match");
         phone.classList.add("is-invalid");
     }
 })
 
+let submit = document.getElementById("submit");
+submit.addEventListener("click", (e) => {
+   
+        e.preventDefault();
+        console.log("You clicked on submit");
+        
+    
+    let success = document.getElementById("success");
+    success.classList.add("show");
+})
