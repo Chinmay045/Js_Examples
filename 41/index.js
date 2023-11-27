@@ -1,6 +1,7 @@
 
-let regex = /\wart/
-str = "Harry bhai"
+let regex = /\wart/;
+regex = /\w+d1r/;
+str = "Harryd1r bhai"
 
 
 let result = regex.exec(str);
