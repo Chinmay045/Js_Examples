@@ -2,8 +2,9 @@
 let regex = /\wart/;
 regex = /\w+d1r/;
 regex = /\w+ bhai/;
-regex = /\d999/
-str = "Harryd1r bhai  99999"
+regex = /\d999/;
+regex = /\D999/;
+str = "Harryd1r bhai  hrr99999"
 
 
 let result = regex.exec(str);
