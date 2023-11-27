@@ -4,7 +4,7 @@ regex = /\w+d1r/;
 regex = /\w+ bhai/;
 regex = /\d999/;
 regex = /\D999/;
-regex = /\ska number/
+regex = /\Ska number/
 str = "Harryd1r bhai ka number  hrr99999"
 
 
