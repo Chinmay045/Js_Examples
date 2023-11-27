@@ -1,6 +1,7 @@
 
 let regex = /\wart/;
 regex = /\w+d1r/;
+regex = /\w bhai/;
 str = "Harryd1r bhai"
 
 
