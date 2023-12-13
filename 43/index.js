@@ -1,4 +1,8 @@
 console.log("Hello");
+//utility function to get dom element 
+
+
+let addParamCount = 0;
 //hide paerameters box initially
 let parametersBox = document.getElementById("parametersBox");
 parametersBox.style.display = "none";
@@ -10,10 +14,29 @@ paramsRadio.addEventListener("click", () => {
     document.getElementById("parametersBox").style.display = "block";
 
 })
+//if user clicks the json box , hide the params box
 let jsonRadio = document.getElementById("jsonRadio");
 jsonRadio.addEventListener("click", () => {
     document.getElementById("requestJsonBox").style.display = "block";
     document.getElementById("parametersBox").style.display = "none";
 })
 
-//if user clicks the json box , hide the params box
+
+//if the user clicks on + button,add more parameters
+let addParam = document.getElementById("addParam");
+addParam.addEventListener("click", () => {
+    let params = document.getElementById("params");
+    let string = `    <div class="form-row">
+     <label for="url" class="col-sm-2 col-form-label">Parameter ${addParamCount + 2}</label>
+     <div class="col-md-4">
+         <input type="text" class="form-control" id="parameterKey1${addParamCount + 2}" placeholder="Enter Parameter 1 Key">
+     </div>
+     <div class="col-md-4">
+         <input type="text" class="form-control" id="parameterValue1 ${addParamCount + 2}" placeholder="Enter Parameter 1 Value">
+     </div>
+     <button id="addParam" class="btn btn-primary">+</button>
+
+ </div>`
+ addParamCount ++;
+})
+
